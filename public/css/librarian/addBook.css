@@ -1,0 +1,864 @@
+
+.bodyContainer01{
+    position: absolute;
+    width: 1200px;
+    height: 615px;
+    left: 306px;
+    top: 80px;
+
+    background: #FFFFFF;
+    border-radius: 35px;
+}
+
+.backbtn{
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 1000px;
+    top: 480px;
+    border: 1px solid #5CCBD4;
+    background: #5CCBD4;
+    border-radius: 35px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.backbtn a{
+    text-decoration: none;
+    color: white;
+}
+.bodyContainer2{
+    position: absolute;
+    width: 1100px;
+    height: 500px;
+    left: 52px;
+    top: 60px;
+
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+.titalLabel{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 70px;
+    top: 50px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.tital{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 180px;
+    top: 50px;
+    outline: none;
+    border: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+}
+.tital:focus{
+   border:3px solid #2E9FED;
+   outline: 0;
+}
+.checktitalbtn{
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 425px;
+    top: 45px;
+    border: 1px solid #2E9FED;
+    background: #2E9FED;
+    border-radius: 10px;
+}
+.checktitalbtn a{
+    text-decoration: none;
+    color: white;
+
+}
+.checkAuthor{
+    position: absolute;
+    width: 160px;
+    height: 33px;
+    left: 425px;
+    top: 125px;
+    border: 1px solid #2E9FED;
+    background: #2E9FED;
+    border-radius: 10px;   
+}
+.checkAuthor a{
+    text-decoration: none;
+    color: white;
+}
+.isbnLabel{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 70px;
+    top: 90px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.isbn{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 180px;
+    top: 90px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+}
+.isbn:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+
+.checkisbnbtn{
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 425px;
+    top: 85px;
+    border: 1px solid #2E9FED;
+    background: #2E9FED;
+    border-radius: 10px;
+}
+.checkisbnbtn a{
+    text-decoration: none;
+    color: white;
+}
+
+.authorsLabel{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 70px;
+    top: 130px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.author{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 180px;
+    top: 130px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+
+}
+.author:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.editionLabel{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 70px;
+    top: 170px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.edition{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 180px;
+    top: 170px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF; 
+}
+.edition:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.publisherLabel{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 70px;
+    top: 210px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.publisher{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 180px;
+    top: 210px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF; 
+}
+.publisher:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+
+.yearLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 70px;
+    top: 250px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.year{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 180px;
+    top: 250px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.year:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.cateogoryLable{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 70px;
+    top: 290px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.category{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 180px;
+    top: 290px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.category:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.defineNewCategorybtn{
+    position: absolute;
+    width: 160px;
+    height: 33px;
+    left: 425px;
+    top: 287px;
+    border: 1px solid #2E9FED;
+    background: #2E9FED;
+    border-radius: 10px;
+}
+.defineNewCategorybtn a{
+   text-decoration: none;
+   color: white;
+}
+.rackLable{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 70px;
+    top: 330px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.rack{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 180px;
+    top: 330px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.rack:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.defineNewRackbtn{
+    position: absolute;
+    width: 160px;
+    height: 33px;
+    left: 425px;
+    top: 327px;
+    border: 1px solid #2E9FED;
+    background: #2E9FED;
+    border-radius: 10px;
+}
+.defineNewRackbtn a{
+   text-decoration: none;
+   color: white;
+}
+.conditionLable{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 70px;
+    top: 370px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.condition{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 180px;
+    top: 370px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.condition:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.pagesLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 70px;
+    top: 410px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.pages{
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 180px;
+    top: 410px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.pages:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.languagesLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 350px;
+    top: 410px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+} 
+.languages{
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 470px;
+    top: 410px;
+    border: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.languages:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.bookImageLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 650px;
+    top: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;   
+}
+
+.receivedLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 650px;
+    top: 85px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;  
+}
+.receivedDate{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 780px;
+    top: 85px;
+    border: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+}
+.receivedDate:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+
+.defineDonorVendorbtn{
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    left: 100px;
+    top: 150px;
+    border: 1px solid #2E9FED;
+    background: #2E9FED;
+    border-radius: 10px;
+    padding: 5px;
+}
+.defineDonorVendorbtn a{
+    text-decoration: none;
+    color: white;
+}
+.imagefile{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 780px;
+    top: 40px;
+    border: 1px solid white;
+   
+}
+.vendorDonorLabel{
+    position: absolute;
+    width: 200px;
+    height: 27px;
+    left: 30px;
+    top: 70px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.vendorDonor{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 160px;
+    top: 70px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.vendorDonor:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.vendorDonorNameLabel{
+    position: absolute;
+    width: 200px;
+    height: 27px;
+    left: 30px;
+    top: 80px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.vendorDonorName{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 205px;
+    top: 80px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;   
+}
+.container3{
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    left: 650px;
+    top: 130px;
+
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+}
+.nameLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 30px;
+    top: 60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;   
+}
+.name{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 150px;
+    top: 60px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.name:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.addressLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 30px;
+    top: 100px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.address{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 150px;
+    top: 100px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.address:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.emailLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 30px;
+    top: 140px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.email{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 150px;
+    top: 140px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.email:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+.telephoneNoLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 30px;
+    top: 180px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.telephoneNo{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 150px;
+    top: 180px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.telephoneNo:focus{
+    border:3px solid #2E9FED;
+    outline: 0;
+ }
+
+.addbookbtn{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 50px;
+    top: 305px;
+    color: white;
+    background: #49F546;
+    border-radius: 35px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.errorMsg{
+    color: red;
+}
+
+
+
+
+.toggle-btn {
+    padding: 5px 33px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+  }
+
+
+
+.backbtnAddBook{
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 300px;
+    top: 305px;
+    border: 1px solid #5CCBD4;
+    background: #5CCBD4;
+    border-radius: 35px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.backbtnAddBook a{
+    text-decoration: none;
+    color: white;
+}
+  
+  #btn 
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    background: #2e9fed;
+    border-radius: 35px;
+  }
+
+.button-box
+{
+    position: relative;
+    top: 0px;
+    left: 60px;
+}
+  
+  #vendorbtn {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+  
+    color: white;
+    
+  }
+  #donorbtn {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+  
+    color: #000000;
+    
+  }
+
+  .errorTitleMesg{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    font-weight: bold;
+  }
+  .errorISBNMesg{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    font-weight: bold;
+  }
+  .errorAuthorMesg{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 139px;
+    left: 180px;
+    font-weight: bold;
+  }
+.errorEditionMesg{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 160px;
+    left: 180px;
+    font-weight: bold;
+  }
+.errorNoPagesMesg{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 425px;
+    left: 180px;
+    font-weight: bold;
+  }

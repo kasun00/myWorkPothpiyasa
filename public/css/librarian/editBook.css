@@ -1,0 +1,310 @@
+.bodyContainerEditBook{
+    position: absolute;
+    width: 1100px;
+    height: 500px;
+    left: 50px;
+    top: 50px;
+
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+
+.EditBookBackBtn{
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 600px;
+    top: 452px;
+    border: 1px solid #5CCBD4;
+    background: #5CCBD4;
+    border-radius: 35px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.EditBookBackBtn a{
+    text-decoration: none;
+    color: white;
+}
+.redioBtns{
+    position: absolute;
+    top: 330px;
+    left: 776px;
+}
+
+.personTypeEdit{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: -128px;
+    top: -5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.personLabel{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 650px;
+    top: 365px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.person{
+    position: absolute;
+    top: 365px;
+    left: 780px;
+    width: 207px;
+    height: 25px;
+}
+.pagesEditBookLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 70px;
+    top: 410px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.pagesEditBook{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 180px;
+    top: 410px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+
+}
+.languagesEditBookLabel{
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 650px;
+    top: 47px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.languagesEditBook{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 780px;
+    top: 47px;
+    border: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+}
+.imageViewer{
+    position: absolute;
+    top: 95px;
+    left: 782px;
+    width: 200px;
+    height: 170px;
+    border: 3px lightblue solid;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px lightgray;
+}
+.imgView{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+.bookImageEditBookLabel{
+    position: absolute;
+    width: 200px;
+    height: 27px;
+    left: 645px;
+    top: 285px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.imagefileEditBook{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 780px;
+    top: 287px;
+    border: 1px solid white;
+}
+.receivedEditBookLabel{
+    position: absolute;
+    width: 200px;
+    height: 27px;
+    left: 649px;
+    top: 410px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000; 
+}
+.receivedDateEditBook{
+    position: absolute;
+    width: 204px;
+    height: 25px;
+    left: 780px;
+    top: 410px;
+    border: none;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;  
+
+}
+.updateBookBtn{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 350px;
+    top: 450px;
+    color: white;
+    background: #49F546;
+    border-radius: 35px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.deleteBookBtn{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 350px;
+    top: 450px;
+    color: white;
+    background: #ed6464;
+    border-radius: 35px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;  
+}
+.option2{
+    visibility: hidden;
+}
+.option3{
+    visibility: hidden;
+}
+
+.errorMsgTitleEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 63px;
+    left: 180px;
+    font-weight: bold;
+}
+.errorMsgISBNEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 103px;
+    left: 180px;
+    font-weight: bold;
+}
+.errorMesgAuthorEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 143px;
+    left: 180px;
+    font-weight: bold;
+}
+.errorMesgEditionEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 183px;
+    left: 180px;
+    font-weight: bold;
+}
+.errorMesgPublisherEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 223px;
+    left: 180px;
+    font-weight: bold;
+}
+.errorMesgPublishedYearEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 263px;
+    left: 180px;
+    font-weight: bold;
+}
+
+.errorMesgImageEditBook{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 383px;
+    left: 180px;
+    font-weight: bold;
+}
+
+.deleteBookBtn a{
+    text-decoration: none;
+    color: white;
+}
+
