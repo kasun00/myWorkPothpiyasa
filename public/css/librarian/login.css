@@ -88,17 +88,17 @@ img {
 
 /* Main-Content */
 .library_png {
-  top: 100px;
+  top: -15px;
   left: 65px;
   width: 1045px;
-  height: 540px;
+  height: 800px;
 }
 
 .login {
   position: absolute;
   padding: 30px;
-  top: 436px;
-  left: 50%;
+  top: 390px;
+  left: 84%;
   transform: translate(-50%, -50%);
   width: 400px;
   background: #eaf3fa;

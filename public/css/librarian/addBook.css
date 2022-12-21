@@ -521,6 +521,9 @@
     text-decoration: none;
     color: white;
 }
+.donorAddBook{
+    visibility: hidden;
+}
 .imagefile{
     position: absolute;
     width: 200px;
@@ -728,8 +731,8 @@
     position: absolute;
     width: 100px;
     height: 35px;
-    left: 50px;
-    top: 305px;
+    left: -350px;
+    top: 315px;
     color: white;
     background: #49F546;
     border-radius: 35px;
@@ -765,8 +768,8 @@
     position: absolute;
     width: 89px;
     height: 33px;
-    left: 300px;
-    top: 305px;
+    left: 0px;
+    top: 320px;
     border: 1px solid #5CCBD4;
     background: #5CCBD4;
     border-radius: 35px;
@@ -850,7 +853,7 @@
     color: red;
     font-size: 12px;
     position: absolute;
-    top: 160px;
+    top: 183px;
     left: 180px;
     font-weight: bold;
   }

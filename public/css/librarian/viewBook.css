@@ -1,7 +1,7 @@
-.bodyContainer01{
+.bodyContainer01ViewBook{
     position: absolute;
     width: 1200px;
-    height: 615px;
+    height: 654px;
     left: 306px;
     top: 80px;
 
@@ -125,7 +125,7 @@
 
 .pagination{
     position: absolute;
-    top: 540px;
+    top: 600px;
     left: 30px;
 }
 
@@ -141,4 +141,14 @@
 .bookTitleTable{
     text-decoration: none;
     color: blue;
+}
+#filterViewBook{
+    position: absolute;
+    top: 70px;
+    left: 700px;
+}
+.filterViewBookInput{
+    position: absolute;
+    top: 70px;
+    left: 880px;
 }
