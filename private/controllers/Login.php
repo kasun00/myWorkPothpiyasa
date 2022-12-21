@@ -28,11 +28,20 @@ class Login extends Controller
                     Auth::authenticate($row);
 
                     if ($row->JobType == "Librarian") {
-                        $this->redirect('librarian');
+                        $this->redirect('LibrarianDashboard');
 
                     }
                     else if ($row->JobType == "Admin") {
                         $this->redirect('home');
+
+                    }
+                    else if ($row->JobType == "Staff Member") {
+                        $this->redirect('librarystaffdashboard');
+
+                    }
+                    else if($row->MemberType == "Other"){
+
+                        $this->redirect('UserDashboard');
 
                     }
 

@@ -15,7 +15,8 @@ include('../private/views/librarian/includes/header.view.php'); ?>
         </div>
     
         <!-- navigation bar -->
-         <?php include('../private/views/librarian/includes/nav.view.php'); ?> 
+         <?php
+          include('../private/views/librarian/includes/nav.view.php'); ?> 
         
     
         <div class="bodyContainer01">
@@ -73,10 +74,22 @@ include('../private/views/librarian/includes/header.view.php'); ?>
 
         <label for="publisher" class="publisherLabel">Publisher</label>
         <input type="text" name="Publisher" class="publisher" id="publisher" value="<?= get_var('Publisher') ?>" required>
-
+        <div class="errorMesgPublisherEditBook">
+                    <?php if (isset($errors['Publisher'])): ?>
+                    <p>
+                        <?="*" . $errors['Publisher'] ?>
+                    </p>
+                    <?php endif; ?>
+        </div>
         <label for="year" class="yearLabel">Publish Year</label>
         <input type="text" name="PublishedYear" class="year" id="year" value="<?= get_var('PublishedYear') ?>" required>
-
+        <div class="errorMesgPublishedYearEditBook">
+                    <?php if (isset($errors['PublishedYear'])): ?>
+                    <p>
+                        <?="*" . $errors['PublishedYear'] ?>
+                    </p>
+                    <?php endif; ?>
+        </div>
         <label for="category" class="cateogoryLable">Category</label>
         <select id="category" class="category" name="Category" id="category" value="<?= get_var('Category') ?>" required>
             <option value="">--- Choose Type ---</option>
@@ -84,7 +97,7 @@ include('../private/views/librarian/includes/header.view.php'); ?>
                 $category = new BookCategory();
                 $data = $category->findAll();
                 for ($i=0; $i < count($data); $i++) { 
-                    echo "<option ". get_select('Category',get_CategoryName("CategoryID",$data[$i]->CategoryID)) . " value='".$data[$i]->CategoryID."'" .">".$data[$i]->Name."</option>"; 
+                    echo "<option ". get_select('Category',$data[$i]->CategoryID) . " value='".$data[$i]->CategoryID."'" .">".$data[$i]->Name."</option>"; 
                 }
                 
             ?>
@@ -109,16 +122,16 @@ include('../private/views/librarian/includes/header.view.php'); ?>
         <label for="condition" class="conditionLable">Condition</label>
         <select id="condition" class="condition" name="Condition" required>
             <option value="">--- Choose Type ---</option>
-            <option <?= get_select('Condition','Fine')?> value="Fine">Fine/Like New(F)</option>
-            <option <?= get_select('Condition','Near Fine')?> value="Near Fine">Near Fine(NF)</option>
-            <option <?= get_select('Condition','Very Good')?> value="Very Good">Very Good(VG)</option>
-            <option <?= get_select('Condition','Good')?> value="Good">Good(G)</option>
-            <option <?= get_select('Condition','Fair')?> value="Fair">Fair(F)</option>
-            <option <?= get_select('Condition','Poor')?> value="Poor">Poor(P)</option>
+            <option <?= get_select('Condition','FineFine/Like New(F)')?> value="FineFine/Like New(F)">Fine/Like New(F)</option>
+            <option <?= get_select('Condition','Near Fine(NF)')?> value="Near Fine(NF)">Near Fine(NF)</option>
+            <option <?= get_select('Condition','Very Good(VG)')?> value="Very Good(VG)">Very Good(VG)</option>
+            <option <?= get_select('Condition','Good(G)')?> value="Good(G)">Good(G)</option>
+            <option <?= get_select('Condition','Fair(F)')?> value="Fair(F)">Fair(F)</option>
+            <option <?= get_select('Condition','Poor(P)')?> value="Poor(P)">Poor(P)</option>
         </select>
 
         <label for="pages" class="pagesLabel">Pages</label>
-        <input type="text" name="NoPages" class="pages" id="pages" value="<?= get_var("Nopages")?>" required>
+        <input type="text" name="NoPages" class="pages" id="pages" value="<?= get_var("NoPages")?>" required>
         <div class="errorNoPagesMesg">
                     <?php if (isset($errors['NoPages'])): ?>
                     <p>
@@ -137,7 +150,13 @@ include('../private/views/librarian/includes/header.view.php'); ?>
         
         <label for="bookImage" class="bookImageLabel">Upload Image</label> 
         <input type="file" id="imagefile" name="Image" class="imagefile" value="<?= get_var("Image")?>" required>
-
+        <div class="errorMesgImageEditBook">
+                    <?php if (isset($imgErrors['Image'])): ?>
+                    <p>
+                        <?="*" . $ImgErrors['Image'] ?>
+                    </p>
+                    <?php endif; ?>
+        </div>
         <label for="receivedDate" class="receivedLabel">Received Date</label> 
         <input type="date" id="receivedDate" name="ReceivedDate" class="receivedDate" value="<?= get_var("ReceivedDate")?>" required>
         
@@ -152,7 +171,7 @@ include('../private/views/librarian/includes/header.view.php'); ?>
                 onclick="getDonor()">Donor</button>
             </div>
 
-            <div class="vendor" id="vendor">
+            <div class="vendorAddBook" id="vendor">
                 <label for="vendorDonor" class="vendorDonorLabel">Name</label>
                 <select id="vendorDoner" class="vendorDonor" name="VendorID" >
                     <option value="">--- Choose Type ---</option>
@@ -160,14 +179,14 @@ include('../private/views/librarian/includes/header.view.php'); ?>
                         $vendor = new Vendor();
                         $data = $vendor->findAll();
                         for ($i=0; $i < count($data); $i++) { 
-                            echo "<option". get_select("VendorID",$data[$i]->VendorID) ." value='".$data[$i]->VendorID."'"." >".$data[$i]->VendorID." - ".$data[$i]->Name."</option>"; 
+                            echo "<option value='".$data[$i]->VendorID."'"." >".$data[$i]->VendorID." - ".$data[$i]->Name."</option>"; 
                         }
                     ?>
                 </select>
                 <!-- <button class="defineDonorVendorbtn"><a href="#">Define New Vendor</a></button> -->
             </div>
 
-            <div class="donor" id="donor">
+            <div class="donorAddBook" id="donor">
                 <label for="vendorDonor" class="vendorDonorLabel">Name</label>
                 <select id="vendorDoner" class="vendorDonor" name="DonorID" >
                     <option value="">--- Choose Type ---</option>
@@ -175,7 +194,7 @@ include('../private/views/librarian/includes/header.view.php'); ?>
                         $donor = new Donor();
                         $data = $donor->findAll();
                         for ($i=0; $i < count($data); $i++) { 
-                            echo "<option". get_select("DonorID",$data[$i]->DonorID) ." value='".$data[$i]->DonorID."'".">".$data[$i]->DonorID." - ".$data[$i]->Name."</option>"; 
+                            echo "<option value='".$data[$i]->DonorID."'".">".$data[$i]->DonorID." - ".$data[$i]->Name."</option>"; 
                         }
                     ?>
                 </select>
@@ -200,5 +219,5 @@ include('../private/views/includes/popup.add.view.php');?>
 
 <!-- set the popup msg -->
 <?php if($flag[0]==1){
-    echo '<script type="text/javascript">openPopup("http://localhost/Pothpiyasa-main/public/books/add");</script>';
+    echo '<script type="text/javascript">openPopup("http://localhost/Pothpiyasa/public/books/add");</script>';
 }?>

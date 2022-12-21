@@ -40,20 +40,5 @@ class Controller
         die;
     }
 
-    public function specificView($view, $data = array())
-    {
-        //Save data to variables, array keys become variable names
-        
-        extract($data);
-        //['rows'] => $data; --> $rows = $data;
-
-        // if(file_exists("../private/views/".$view.".view.php"))
-        // {
-        //     require("../private/views/".$view.".view.php");
-        // }else{
-        //     require("../private/views/404.view.php");
-        // }
-        header("Location: ". ROOT . "/".trim($view,"/"));
-        die;
-    }
+    
 }

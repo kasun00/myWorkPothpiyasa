@@ -15,9 +15,19 @@
         <!-- navigation bar -->
     
         <?php include('../private/views/librarian/includes/nav.view.php'); ?>
-
+        <!-- <select name="filterViewBook" id="filterViewBook">
+            <option value="">--- Choose Type ---</option>
+            <option value="">Title</option>
+            <option value="">ISBN</option>
+            <option value="">Edition</option>
+            <option  value="">Language</option>
+            <option  value="Publisher">Publisher</option>
+            <option  value="PublishedYear">PublishedYear</option>
+        </select>
+        <input type="text" class="filterViewBookInput" id="filterViewBookInput">
+        <button></button> -->
         <!-- body -->
-        <div class="bodyContainer01">
+        <div class="bodyContainer01ViewBook">
         <?php include('../private/views/includes/popup.delete1.view.php');?>
         <?php include('../private/views/includes/popup.delete2.view.php');?>
             <?php 
@@ -119,16 +129,7 @@
 
                 echo $table1;
             ?>
-            <!-- <button class="backBookViewbtn"><a href="<?=ROOT?>">Back</a></button>
-            <div class="container_popup">
-                <div class="delete1Popup" id="popup">
-                <img src="<?= ROOT ?>/img/tick.png">
-                <h2>Are you sure?</h2>
-                <p>You will not be able to recover this data!</p>
-                <button class="cancelButton" type="button" onclick="closePopup()">No, cancel it!</button>
-                <button class="deleteButton" type="button" onclick="directPreviewPage()">Yes, delete it!</button>
-
-        </div>  -->
+            
         <?php include('../private/views/includes/popup.delete1.view.php'); ?>
 
         </div>

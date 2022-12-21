@@ -1,4 +1,4 @@
-<?php include('../private/views/librarian/includes/header.view.php'); ?>
+<?php include('../private/views/libraryStaff/includes/header.view.php'); ?>
 
 <body>
 <div class="header">
@@ -13,7 +13,7 @@
 
 <!-- navigation bar -->
 
-<?php include('../private/views/librarian/includes/nav.view.php'); ?>
+<?php include('../private/views/libraryStaff/includes/nav.view.php'); ?>
 
 
 <div class="dashContainer1">
@@ -26,14 +26,7 @@
             <h3 class="totalMemLabel">Total Members</h3>
             <p class="totalMemValue">200</p>
       </div>
-      <div class="borowedBook">
-            <h3 class="totalBBookLabel">Borrowed Books</h3>
-            <p class="totalBValue">25</p>
-      </div>
-      <div class="damedgeBook">
-            <h3 class="totalDLabel">Dameged Books</h3>
-            <p class="totalDValue">100</p>
-      </div>
+      
 </div>
 
 

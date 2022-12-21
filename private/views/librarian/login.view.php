@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <img src="<?=ROOT?>/img/admin/login/library.png" class="library_png">
+        <img src="<?=ROOT?>/img/libraryStaff/libraryStaff.png" class="library_png">
 
         <div class="login">
             <h1>Welcome</h1>
